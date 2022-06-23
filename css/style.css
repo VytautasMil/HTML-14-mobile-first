@@ -1,8 +1,11 @@
 /* Common css ======================== */
 html {
-    font-size: 16px;
     /* tik kol kuriam del scroll  */
     margin-bottom: 500px;
+  }
+  
+  p {
+    font-size: 16px;
   }
   
   /* Uset cards ======================== */
@@ -61,5 +64,10 @@ html {
     }
     .u-card__title {
       align-self: flex-end;
+    }
+  }
+  @media screen and (min-width: 1000px) {
+    p {
+      font-size: 18px;
     }
   }
