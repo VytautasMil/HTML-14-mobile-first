@@ -43,6 +43,16 @@ html {
       column-gap: 1.8rem;
       grid-template-columns: 30% auto;
     }
+    .u-card--rtl {
+      text-align: right;
+      grid-template-columns: auto 30%;
+    }
+    .u-card--rtl .u-card__image {
+      grid-column: 2 / span 1;
+    }
+    .u-card--rtl .u-card__title {
+      grid-row: 1;
+    }
     .u-card__image {
       width: 100%;
       aspect-ratio: 1;
