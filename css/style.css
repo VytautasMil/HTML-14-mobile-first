@@ -6,6 +6,10 @@ html {
   }
   
   /* Uset cards ======================== */
+  .user-section {
+    background-color: #f6f6f6;
+  }
+  
   .u-card {
     text-align: center;
     color: #999999;
@@ -15,6 +19,7 @@ html {
   }
   
   .u-card__image {
+    display: inline-block;
     border-radius: 50%;
     width: 300px;
     height: 300px;
@@ -26,4 +31,25 @@ html {
   .u-card__title {
     font-weight: normal;
     font-size: 1.4rem;
+  }
+  
+  @media screen and (min-width: 650px) {
+    .user-section {
+      padding: 0 6%;
+    }
+    .u-card {
+      text-align: left;
+      display: grid;
+      column-gap: 1.8rem;
+      grid-template-columns: 30% auto;
+    }
+    .u-card__image {
+      width: 100%;
+      aspect-ratio: 1;
+      height: initial;
+      grid-row: span 2;
+    }
+    .u-card__title {
+      align-self: flex-end;
+    }
   }
